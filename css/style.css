@@ -1,2 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 
+/* ---------------------base css--------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    --main-color: #283526;
+    --primary-color: #888888;
+    --button-background: #1b3b68;
+    --primary-btn-background: #fe7649;
+    --background-color: #e2efff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--main-color);
+}
+h3{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+p,
+a,
+li,
+button {
+   font-size: 1.8rem;
+   line-height: 150%;
+   font-style: normal;
+   font-weight: 700;
+   color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+}
+li { 
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: 0;
+    border-radius: 1rem;
+}
+/*------------------ navbar design ------------------*/
+header {
+    padding: 0 8rem;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+}
+.logo-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.logo-menu-wrapper .logo-container img {
+    width: 13rem;
+    height: 5.5rem;
+}
+.logo-menu-wrapper .menu-container {
+    display: flex;
+    height: inherit;
+}
+.navbar-wrapper li {
+    margin: 0 2rem;
+}
+.navbar-wrapper li a {
+    font-size: 2rem;
+    line-height: 3.6rem;
+}
+.navbar-wrapper .buttons-wrapper li a {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.navbar-wrapper li a:hover{
+    color: var(--button-background);
+}
+.buttons-wrapper {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttons-wrapper .signup-btn {
+    background-color: var(--button-background);
+    color: var(--background-color);
+}
+
+
+
+
+/*----------------- responsive design parts ------------------*/
+
+/* ---------------- navbar responsive design------------------*/
+
+@media only screen and (max-width: 860px) {
+    .navbar-wrapper{
+        display:  block;
+    }
+    .logo-menu-wrapper {
+        display:  block;
+    }
+    .buttons-wrapper{
+        display: block;
+    }
+    .logo-container{
+        display: block;
+    }
+    .menu-container{
+        flex-direction: column;
+    }
+    .menu-container li {
+        margin: 5px;
+    }
+    .buttons-wrapper li{
+        margin: 15px 0;
+    }
+}
