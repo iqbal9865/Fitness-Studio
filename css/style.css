@@ -71,7 +71,7 @@ button {
 }
 /*------------------ navbar design ------------------*/
 section {
-    margin: 3.5rem 0;
+    padding: 3.5rem 0;
 }
 header,
 .container {
@@ -122,6 +122,8 @@ header nav {
     background-color: var(--button-background);
     color: var(--background-color);
 }
+
+/*---------------- main section design ----------------*/
 .main-section-wrapper{
     width: 100%;
     display: flex;
@@ -137,12 +139,16 @@ header nav {
 .main-section-img-part img {
     width: 100%;
 }
+.full-width-title {
+    text-align: center;
+    margin: 30px 0;
+}
 .title {
     margin: 10px 0;
 }
 .lorem-text{
     text-align: justify; 
-    padding-right: 32px;
+    /* padding-right: 32px; */
 }
 .button-group img {
     margin: 40px 10px;
@@ -184,11 +190,31 @@ header nav {
     color: var(--main-color);
     margin: 8px 15px;
 }
-
-
+.tools-for-goals-section {
+    margin-top: 50px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--background-color);
+}
+.task-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+}
+.task-wrapper .icon {
+    width: 30%;
+}
+.task-wrapper .task1,
+.task-wrapper .task2,
+.task-wrapper .task3 {
+    padding: 2rem 2rem;
+    text-align: center;
+    transition: all 0.3s linear;
+    background-color: white;
+    border-radius: 2rem;
+    
+}
 /*----------------- responsive design parts ------------------*/
-
-/* ---------------- navbar responsive design------------------*/
 
 @media only screen and (max-width: 860px) {
     .navbar-wrapper{
@@ -234,4 +260,10 @@ header nav {
         display: block;
         width: 100%;
     }
+    .task-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem;
+    }
 }
+/*----------------- end of responsive design ------------------*/
