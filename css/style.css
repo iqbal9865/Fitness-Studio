@@ -42,15 +42,21 @@ h2{
 h3{
     font-size: 2.4rem;
 }
-p,
-a,
-li,
+button  a,
 button {
    font-size: 1.7rem;
    line-height: 150%;
    font-style: normal;
    font-weight: 700;
-   color: var(--primary-color);
+   color: var(--background-color);
+}
+p,
+li{
+    font-size: 1.7rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--main-color);
 }
 strong {
     color: var(--main-color);
@@ -264,9 +270,31 @@ footer .logo-container img {
     text-decoration: underline;
 }
 
+/*----------------- design for sign up page ------------------*/
+input[type="text"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
 /*----------------- responsive design parts ------------------*/
 
 @media only screen and (max-width: 860px) {
+    header, .container {
+        padding: 0 2rem;
+    }
     .navbar-wrapper{
         display:  block;
         height: 400px;
