@@ -84,7 +84,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 50%;
 }
 .logo-menu-wrapper .logo-container img {
     width: 13rem;
@@ -111,7 +111,7 @@ header nav {
 }
 .buttons-wrapper {
     display: flex;
-    width: 40%;
+    width: 50%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -139,8 +139,17 @@ header nav {
 }
 .lorem-text{
     text-align: justify; 
+    padding-right: 32px;
 }
-
+.button-images img {
+    margin: 40px 10px;
+    width: 13.5rem;
+    height: 4rem;
+}
+#img-first-child {
+    height: 4.3rem;
+    margin-bottom: 37px;
+}
 
 /*----------------- responsive design parts ------------------*/
 
