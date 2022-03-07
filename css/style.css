@@ -70,9 +70,12 @@ button {
     display: table;
 }
 /*------------------ navbar design ------------------*/
-header {
+section {
+    margin: 3.5rem 0;
+}
+header,
+.container {
     padding: 0 8rem;
-    height: 100vh;
 }
 header nav {
     display: flex;
@@ -88,7 +91,7 @@ header nav {
 }
 .logo-menu-wrapper .logo-container img {
     width: 13rem;
-    height: 5.5rem;
+    height: 5.9rem;
 }
 .logo-menu-wrapper .menu-container {
     display: flex;
@@ -141,7 +144,7 @@ header nav {
     text-align: justify; 
     padding-right: 32px;
 }
-.button-images img {
+.button-group img {
     margin: 40px 10px;
     width: 13.5rem;
     height: 4rem;
@@ -150,6 +153,38 @@ header nav {
     height: 4.3rem;
     margin-bottom: 37px;
 }
+.common-section-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-side-wrapper {
+    text-align: center;
+    width: 50%;
+}
+.content-side-wrapper {
+    width: 50%;
+}
+.img-side-wrapper img {
+    width: 60%;
+    border-radius: 2rem;
+}
+.button-group {
+    margin: 20px 0px;
+}
+.common-button,
+.common-button-normal:hover {
+    background-color: var(--primary-btn-background);
+    color: var( --background-color);
+    margin: 8px 15px;
+}
+.common-button-normal{
+    border: 1px solid var(--primary-btn-background);
+    color: var(--main-color);
+    margin: 8px 15px;
+}
+
 
 /*----------------- responsive design parts ------------------*/
 
@@ -185,6 +220,18 @@ header nav {
         width: 100%;
     }
     .main-section-img-part{
+        width: 100%;
+    }
+    .common-section-wrapper{
+        display: block;
+    }
+    .img-side-wrapper {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .content-side-wrapper {
+        display: block;
         width: 100%;
     }
 }
