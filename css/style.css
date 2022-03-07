@@ -250,6 +250,9 @@ footer {
     background-color: var(--background-color);
     padding: 20px 0;
 }
+footer li {
+    margin-bottom: 12px;
+}
 footer .logo-container img {
     width: 200px;
 }
