@@ -46,11 +46,15 @@ p,
 a,
 li,
 button {
-   font-size: 1.8rem;
+   font-size: 1.7rem;
    line-height: 150%;
    font-style: normal;
    font-weight: 700;
    color: var(--primary-color);
+}
+strong {
+    color: var(--main-color);
+    font-weight: 700;
 }
 a {
     text-decoration: none;
@@ -62,9 +66,11 @@ button {
     cursor: pointer;
     padding: 1rem 3rem;
     border: 0;
-    border-radius: 1rem;
+    border-radius: .1rem;
 }
-
+i{
+    color: tomato;
+}
 .clearfix::after {
     content: '';
     clear: both;
@@ -72,7 +78,7 @@ button {
 }
 /*------------------ navbar design ------------------*/
 section {
-    padding: 3.5rem 0;
+    padding: 5rem 0;
 }
 header,
 .container {
@@ -108,7 +114,6 @@ header nav {
 .navbar-wrapper .buttons-wrapper li a {
     background-color: var(--background-color);
     padding: 1rem;
-    border-radius: 1rem;
 }
 .navbar-wrapper li a:hover{
     color: var(--button-background);
@@ -175,6 +180,7 @@ header nav {
 .img-side-wrapper img {
     width: 60%;
     border-radius: 2rem;
+    padding: 40px 0;
 }
 .button-group {
     margin: 20px 0px;
@@ -191,7 +197,7 @@ header nav {
     margin: 8px 15px;
 }
 .tools-for-goals-section {
-    margin-top: 50px;
+    margin: 50px 0;
     width: 100%;
     padding: 30px 0;
     background-color: var(--background-color);
@@ -200,6 +206,7 @@ header nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
+    margin: 4rem 0;
 }
 
 .task-wrapper .task1,
@@ -210,17 +217,14 @@ header nav {
     transition: all 0.3s linear;
     border-radius: 2rem;
     cursor: pointer;
-}
-.task-wrapper .task3,
-.task-wrapper .task1:hover,
-.task-wrapper .task2:hover{
     background-color: white;
+   
 }
+
 .task-wrapper .task1 img, 
 .task-wrapper .task2 img, 
 .task-wrapper .task3 img {
     width: 30%;
-    /* height: 15rem; */
     transition: all 1s; 
 }
 .task-wrapper .task1:hover > img, 
@@ -228,6 +232,38 @@ header nav {
 .task-wrapper .task3:hover > img {
     transform: rotate(360deg);
 }
+#own-fitness-section .img-side-wrapper img {
+    width: 90%;
+    height: inherit;
+    margin: 0;
+}
+.rule {
+    margin: 15px 0;
+}
+footer {
+    background-color: var(--background-color);
+    padding: 20px 0;
+}
+footer .logo-container img {
+    width: 200px;
+}
+.footer-container, 
+.footer-right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-col-one,
+.footer-col-two,
+.footer-col-three,
+.footer-col-four {
+    width: 12.20%;
+}
+.footer-right-side li:hover {
+    text-decoration: underline;
+}
+
 /*----------------- responsive design parts ------------------*/
 
 @media only screen and (max-width: 860px) {
@@ -278,6 +314,22 @@ header nav {
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 4rem;
+    }
+    .footer-container {
+        display: block;
+    }
+    .footer-right-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap
+    }
+    .footer-col-one,
+    .footer-col-two,
+    .footer-col-three,
+    .footer-col-four {
+        width: 50%;
+        text-align: center;
     }
 }
 /*----------------- end of responsive design ------------------*/
