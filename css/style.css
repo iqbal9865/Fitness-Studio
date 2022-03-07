@@ -24,6 +24,7 @@ h4,
 h5,
 h6 {
     color: var(--main-color);
+    text-transform: capitalize;
 }
 h1,
 h2,
@@ -148,7 +149,6 @@ header nav {
 }
 .lorem-text{
     text-align: justify; 
-    /* padding-right: 32px; */
 }
 .button-group img {
     margin: 40px 10px;
@@ -201,18 +201,32 @@ header nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
 }
-.task-wrapper .icon {
-    width: 30%;
-}
+
 .task-wrapper .task1,
 .task-wrapper .task2,
 .task-wrapper .task3 {
     padding: 2rem 2rem;
     text-align: center;
     transition: all 0.3s linear;
-    background-color: white;
     border-radius: 2rem;
-    
+    cursor: pointer;
+}
+.task-wrapper .task3,
+.task-wrapper .task1:hover,
+.task-wrapper .task2:hover{
+    background-color: white;
+}
+.task-wrapper .task1 img, 
+.task-wrapper .task2 img, 
+.task-wrapper .task3 img {
+    width: 30%;
+    /* height: 15rem; */
+    transition: all 1s; 
+}
+.task-wrapper .task1:hover > img, 
+.task-wrapper .task2:hover > img, 
+.task-wrapper .task3:hover > img {
+    transform: rotate(360deg);
 }
 /*----------------- responsive design parts ------------------*/
 
