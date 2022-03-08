@@ -33,13 +33,13 @@ h3 {
     line-height: 6rem;
     text-transform: capitalize;
 }
-h1{
+h1 {
     font-size: 4rem;
 }
-h2{
+h2 {
     font-size: 3.2rem;
 }
-h3{
+h3 {
     font-size: 2.4rem;
 }
 button  a,
@@ -51,7 +51,7 @@ button {
    color: var(--background-color);
 }
 p,
-li{
+li {
     font-size: 1.7rem;
     line-height: 150%;
     font-style: normal;
@@ -300,7 +300,7 @@ footer .logo-container img {
 .footer-col-four {
     width: 12.20%;
 }
-.footer-right-side li:hover {
+li:hover {
     text-decoration: underline;
 }
 
@@ -321,7 +321,7 @@ footer .logo-container img {
     .buttons-wrapper{
         display: block;
     }
-    .logo-container{
+    .logo-container {
         display: block;
     }
     .menu-container{
@@ -330,7 +330,7 @@ footer .logo-container img {
     .menu-container li {
         margin: 5px;
     }
-    .buttons-wrapper li{
+    .buttons-wrapper li {
         margin: 15px 0;
     }
     .main-section-wrapper{
@@ -339,10 +339,10 @@ footer .logo-container img {
     .main-section-content-part{
         width: 100%;
     }
-    .main-section-img-part{
+    .main-section-img-part {
         width: 100%;
     }
-    .common-section-wrapper{
+    .common-section-wrapper {
         display: block;
     }
     .img-side-wrapper {
